@@ -53,12 +53,12 @@
 <a href="https://github.com/hdrhistogram/HdrHistogram_c">HdrHistogram_c</a>, a flexible library for
 recording histograms without having to know very much about the data being histogrammed.</p>
 
-<p>The top-level type is <code>Histogram</code>.</p>
+<p>The top-level type is <a href="struct.Histogram.html"><code>Histogram</code></a>.</p>
 
 <h1 id="example" class='section-header'><a
                            href="#example">Example</a></h1>
 <p>This sets up a histogram to record values in the range 1..1000_000 with 2 significant figures of
-precision. It then records </p>
+precision. It then records one count each of 1 and 10, and 40 counts of 100.</p>
 <pre class='rust rust-example-rendered'>
 <span class='kw'>let</span> <span class='kw-2'>mut</span> <span class='ident'>h</span> <span class='op'>=</span> <span class='ident'>Histogram</span>::<span class='ident'>init</span>(<span class='number'>1</span>, <span class='number'>1000000</span>, <span class='number'>2</span>).<span class='ident'>unwrap</span>();
  
@@ -76,7 +76,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.CountIterItem.html'
                                title='hdrhistogram::CountIterItem'>CountIterItem</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator result producing counts.</p>
+
                         </td>
                     </tr>
                 
@@ -84,7 +85,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.F64CountIterItem.html'
                                title='hdrhistogram::F64CountIterItem'>F64CountIterItem</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator result over <code>F64Histogram</code> containing counts.</p>
+
                         </td>
                     </tr>
                 
@@ -92,7 +94,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.F64Histogram.html'
                                title='hdrhistogram::F64Histogram'>F64Histogram</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Instance of a histogram recording <code>f64</code> values.</p>
+
                         </td>
                     </tr>
                 
@@ -100,7 +103,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.F64LinearIter.html'
                                title='hdrhistogram::F64LinearIter'>F64LinearIter</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator over <code>F64Histogram</code> producing linear buckets.</p>
+
                         </td>
                     </tr>
                 
@@ -108,7 +112,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.F64LogIter.html'
                                title='hdrhistogram::F64LogIter'>F64LogIter</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator over <code>F64Histogram</code> producing logarithmic buckets.</p>
+
                         </td>
                     </tr>
                 
@@ -116,7 +121,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.F64PercentileIter.html'
                                title='hdrhistogram::F64PercentileIter'>F64PercentileIter</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator over <code>F64Histogram</code> producing percentiles.</p>
+
                         </td>
                     </tr>
                 
@@ -124,7 +130,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.F64PercentileIterItem.html'
                                title='hdrhistogram::F64PercentileIterItem'>F64PercentileIterItem</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator result over <code>F64Histogram</code> containing percentiles.</p>
+
                         </td>
                     </tr>
                 
@@ -132,15 +139,7 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.F64RecordedIter.html'
                                title='hdrhistogram::F64RecordedIter'>F64RecordedIter</a></td>
                         <td class='docblock short'>
-                             
-                        </td>
-                    </tr>
-                
-                    <tr class=' module-item'>
-                        <td><a class='struct' href='struct.HistoErr.html'
-                               title='hdrhistogram::HistoErr'>HistoErr</a></td>
-                        <td class='docblock short'>
-                             <p>Catch-all error return.</p>
+                             <p>Iterator over <code>F64Histogram</code> producing recorded samples.</p>
 
                         </td>
                     </tr>
@@ -149,7 +148,17 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.Histogram.html'
                                title='hdrhistogram::Histogram'>Histogram</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Instance of a Histogram.</p>
+
+                        </td>
+                    </tr>
+                
+                    <tr class=' module-item'>
+                        <td><a class='struct' href='struct.HistogramErr.html'
+                               title='hdrhistogram::HistogramErr'>HistogramErr</a></td>
+                        <td class='docblock short'>
+                             <p>Catch-all error return.</p>
+
                         </td>
                     </tr>
                 
@@ -157,7 +166,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.LinearIter.html'
                                title='hdrhistogram::LinearIter'>LinearIter</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator over <code>Histogram</code> producing linear buckets.</p>
+
                         </td>
                     </tr>
                 
@@ -165,7 +175,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.LogIter.html'
                                title='hdrhistogram::LogIter'>LogIter</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator over <code>Histogram</code> producing logarithmic buckets.</p>
+
                         </td>
                     </tr>
                 
@@ -173,7 +184,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.PercentileIter.html'
                                title='hdrhistogram::PercentileIter'>PercentileIter</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator over <code>Histogram</code> producing percentile buckets.</p>
+
                         </td>
                     </tr>
                 
@@ -181,7 +193,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.PercentileIterItem.html'
                                title='hdrhistogram::PercentileIterItem'>PercentileIterItem</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator result producing percentiles.</p>
+
                         </td>
                     </tr>
                 
@@ -189,7 +202,8 @@ precision. It then records </p>
                         <td><a class='struct' href='struct.RecordedIter.html'
                                title='hdrhistogram::RecordedIter'>RecordedIter</a></td>
                         <td class='docblock short'>
-                             
+                             <p>Iterator over <code>Histogram</code> producing recorded values.</p>
+
                         </td>
                     </tr>
                 </table></section>
